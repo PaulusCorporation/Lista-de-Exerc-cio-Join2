@@ -68,7 +68,7 @@ ORDER BY p.total_vendas DESC;
 --Query 4
 WITH vendas_por_estado AS (
     SELECT 
-        u.cidade as estado,  -- Coluna CIDADE = Estados
+        u.cidade as estado,  
         COUNT(*) as total_vendas,
         SUM(v.valor_compra) as valor_total_vendas
     FROM vendas v
